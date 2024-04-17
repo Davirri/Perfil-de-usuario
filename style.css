@@ -107,3 +107,9 @@
 .iconos .boton {
     margin-top: 15px;
 }
+.images {
+   width: 100%;
+   max-width: 1000px;
+   min-width: 100px;
+   margin-top: 15px;
+}

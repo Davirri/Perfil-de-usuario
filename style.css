@@ -88,7 +88,7 @@
 .perfil .footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     box-shadow: 0 0 25px yellowgreen;
     background-color: #fff;
     border-radius: 15px;
@@ -98,34 +98,38 @@
     min-width: 100px;
 }
 
-.perfil .bio {
-    margin-bottom: 1.25rem;
-    text-align: center;
-}
-
-.perfil .lista {
+.footer .lista {
     width: 50%;
     list-style: none;
+    padding: 5px 0;
 }
+
+.footer .lista li {
+    margin-top: 1.2rem;
+    font-family: cursive;
+}
+
+.footer .lista li i {
+    padding: 0 15px 0;
+}
+
 
 .perfil .bio {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     box-shadow: 0 0 25px greenyellow;
-    
     border-radius: 15px;
     background-color: white;
-}
+    margin-bottom: 1.25rem;
+    text-align: center;
 
-.perfil .lista li {
-    padding: 5px 0;
 }
 
 .iconos {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1rem;
+    top: 3.5rem;
 }
 
 .iconos .boton {
@@ -139,36 +143,34 @@
     height: 50px;
     border-radius: 50%;
     color: #000000;
-    box-shadow: 0 0 25px;
-}
-
-.iconos .boton {
+    box-shadow: 0 0 25px greenyellow;
     margin-top: 15px;
 }
 
 .images {
-    width: 100%;
-    margin-top: 3rem;
-    max-width: 1000px;
-    min-width: 100px;
-    position: relative;
-    left: 6.2rem;
+    margin-top: 2rem;
+
 }
 
 .Varios {
     text-align: center;
     display: flex;
-    padding: 1rem;
+    flex-wrap: wrap;
     margin: auto;
     font-family: cursive;
+    color: black;
+    padding: 1rem;
+
 }
 
 .tabla td {
     border: solid 1px black;
+    padding: 0.5rem;
 }
 
-.lista1 {
+.lista1 li {
     list-style: none;
+    padding: 0 0 15px;
 }
 
 .boton:hover {
@@ -234,12 +236,16 @@ img:hover {
     transition: 2s;
 }
 
-ul {
+.colores {
     margin: 1.5rem;
     display: flex;
 }
 
-ul li {
+.colores ul {
+    display: flex;
+}
+
+.colores ul li {
     list-style: none;
     width: 40px;
     height: 40px;
@@ -262,56 +268,59 @@ ul li {
     }
 }
 
-ul li:nth-child(1) {
+.colores li:nth-child(1) {
     animation-delay: -1.4s;
     background: #ffff00;
     box-shadow: 0 0 50px #ffff00;
 
 }
 
-ul li:nth-child(2) {
+.colores li:nth-child(2) {
     animation-delay: -1.2s;
     background: #76ff03;
     box-shadow: 0 0 50px #76ff03;
 
 }
 
-ul li:nth-child(3) {
+.colores li:nth-child(3) {
     animation-delay: -1s;
     background: #f06292;
     box-shadow: 0 0 50px #f06292;
 
 }
 
-ul li:nth-child(4) {
+.colores li:nth-child(4) {
     animation-delay: -0.8s;
     background: #4fc3f7;
     box-shadow: 0 0 50px #4fc3f7;
 
 }
 
-ul li:nth-child(5) {
+.colores li:nth-child(5) {
     animation-delay: -0.6s;
     background: #ba68c8;
     box-shadow: 0 0 50px #ba68c8;
 
 }
 
-ul li:nth-child(6) {
+.colores li:nth-child(6) {
     animation-delay: -0.4s;
     background: #f57c00;
     box-shadow: 0 0 50px #f57c00;
 
 }
 
-ul li:nth-child(7) {
+.colores li:nth-child(7) {
     animation-delay: -0.2s;
     background: #673ab7;
     box-shadow: 0 0 50px #673ab7;
 
 }
-body{
+
+body {
     background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIJJlCR0HOecq9JISVFfTCeMKDW_DdTBBaCn1qcXrpNi1ltdSRifJvr1L33cXFrVBGEnbJjTW9OBo4952hP3gVN_okGPE5psgnIUyuIO2hSDpP2MZO3vqASDoR8u4C7FZKg5gAtjCFopc7/s1600/EFECTOS+%2528342%2529.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+    padding: 1.5rem;
 }
